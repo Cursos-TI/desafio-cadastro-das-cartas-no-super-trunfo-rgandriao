@@ -7,21 +7,21 @@ int main() {
     printf("Cadastrar Cartas\n");
     
     //Variaveis para 1 carta
-    int população1;
+    int populacao1;
     int pontosTuristicos1;
     float area1;
     float pib1;
     char estado1;
-    char codigoCidade[30];
+    char codigoCidade1[30];
     char codigo1[5];
     
     //Variaveis para 2 carta
-    int população2;
+    int populacao2;
     int pontosTuristicos2;
     float area2;
     float pib2;
     char estado2;
-    char codigoCidade[30];
+    char codigoCidade2[30];
     char codigo2[5];
 
     // solicitacao ao usuario
@@ -32,13 +32,13 @@ int main() {
     scanf("%c",&estado1);
     //dados do codigo da carta1
     printf("Informe o código da carta:");
-    scanf("%s", codigo1);
+    scanf("%s", &codigo1);
     //dados do nome da cidade da carta1
     printf("Informe o nome da cidade: ");
-    scanf("%[^\n]", codigoCidade1);
+    scanf("%[^\n]", &codigoCidade1);
     //dados da populacao da carta1
     printf("Informe a população: ");
-    scanf("%d", &populacao1);
+    scanf("%d", & populacao1);
     //dados da area da carta 1
     printf("Informe a área (em km²): ");
     scanf("%f", &area1);
@@ -57,10 +57,10 @@ int main() {
     scanf(" %c", &estado2);
     //dados do codigo da carta2
     printf("Informe o código da carta: ");
-    scanf("%s", codigo2);
+    scanf("%s", &codigo2);
     //dados do nome da cidade da carta2
     printf("Informe o nome da cidade: ");
-    scanf(" %[^\n]", codigoCidade2);
+    scanf(" %[^\n]", &codigoCidade2);
     //dados da populacao da carta2
     printf("Informe a população: ");
     scanf("%d", &populacao2);
