@@ -14,6 +14,9 @@ int main() {
     char estado1;
     char codigoCidade1[30];
     char codigo1[5];
+    float densidade1;
+    float capita1;
+
     
     //Variaveis para 2 carta
     int populacao2;
@@ -23,6 +26,9 @@ int main() {
     char estado2;
     char codigoCidade2[30];
     char codigo2[5];
+    float densidade2;
+    float capita2;
+
 
     // solicitacao ao usuario
 
@@ -96,6 +102,17 @@ int main() {
     printf("PIB:%f\n", pib2);
     printf("Pontos turísticos:%d\n",pontosTuristicos2);
     
+    // CALCULAR A DENSIDADE POPULACIONAL
 
+    densidade1 = (float)populacao1 / area1;
+    densidade2 = (float)populacao2 / area2;
+
+    // CALCULAR O PIB PER CAPITA
+
+     capita1 = (pib1 * 1000000000) / (float)populacao1;
+     capita2 = (pib2 * 1000000000) / (float)populacao2;
+
+
+     
     return 0;
 }
